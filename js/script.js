@@ -1,6 +1,10 @@
-var elem = document.querySelector(".main-carousel");
-var flkty = new Flickity(elem, {
-  // options
-  cellAlign: "left",
-  contain: true
+var flickityCarousel = document.querySelector(".carousel");
+var flkty = new Flickity(flickityCarousel, {
+  pageDots: false,
+  hash: true
+});
+
+var resetButton = document.querySelector(".reset-button");
+resetButton.addEventListener("click", function() {
+  flkty.select(0);
 });
