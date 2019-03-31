@@ -39,13 +39,18 @@ flkty.on("scroll", function(progress) {
 
 // google maps declaration
 window.initMap = function() {
-  // The location of Uluru
-  var uluru = { lat: 50.185701, lng: 18.637446 };
-  // The map, centered at Uluru
+  // The map, centered at first carousel slide location
   var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 9,
-    center: uluru
+    center: carouselCells[0].coords
   });
-  // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({ position: uluru, map: map });
+
+  // adding markers
+  var markers = "";
+  for (var i = 0; i < carouselCells.length; i++) {
+    markers[i] = new google.maps.Marker({
+      position: carouselCells[i].coords,
+      map: map
+    });
+  }
 };
