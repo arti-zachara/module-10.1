@@ -36,12 +36,7 @@
     <script src="vendor/hash.js"></script>
     <script src="vendor/mustache.min.js"></script>
     <script id="template-carousel-cells" type="x-tmpl-mustache">
-      <div class="carousel-cell">
-      <div class="container" style="background-image:url('
-      {{ image }}
-      ')"><h1>
-      {{ title }}
-      </h1></div></div>
+      <div class="carousel-cell"><div class="container" style="background-image:url('{{ image }}')"><h1> {{ title }} </h1> {{{ description }}} </div></div>
     </script>
 
     <script>
@@ -50,37 +45,37 @@
           image: "images/mutwil-1_knurow.jpg",
           title: "KWK Szczygłowice, Knurów",
           description:
-            '<p>Photo by Maciej Mutwil <strong><a href="http://maciejmutwil.blogspot.com/2018/10/rozadunek-kamienia.html">Rozładunek kamienia</a></strong>'
+            '<p>Photo by Maciej Mutwil <strong><a href="http://maciejmutwil.blogspot.com/2018/10/rozadunek-kamienia.html" target="_blank">Rozładunek kamienia</a></strong></p>'
         },
         {
           image: "images/mutwil-2_suszec.jpg",
           title: "KWK Krupiński, Suszec",
           description:
-            '<p>Photo by Maciej Mutwil <strong><a href="http://maciejmutwil.blogspot.com/2018/09/powrot-po-przerwie.html">Powrót po przerwie</a></strong>'
+            '<p>Photo by Maciej Mutwil <strong><a href="http://maciejmutwil.blogspot.com/2018/09/powrot-po-przerwie.html" target="_blank">Powrót po przerwie</a></strong></p>'
         },
         {
           image: "images/mutwil-3_czulow.jpg",
           title: "KWK Boże Dary, Czułów",
           description:
-            '<p>Photo by Maciej Mutwil <strong><a href="http://maciejmutwil.blogspot.com/2018/09/czuow-is-dead.html">Czułów is dead</a></strong>'
+            '<p>Photo by Maciej Mutwil <strong><a href="http://maciejmutwil.blogspot.com/2018/09/czuow-is-dead.html" target="_blank">Czułów is dead</a></strong></p>'
         },
         {
           image: "images/mutwil-4_halda.jpg",
           title: "Hałda KWK Krupiński, Suszec",
           description:
-            '<p>Photo by Maciej Mutwil <strong><a href="http://maciejmutwil.blogspot.com/2017/10/wymary-krupinski.html">Wymarły Krupiński</a></strong>'
+            '<p>Photo by Maciej Mutwil <strong><a href="http://maciejmutwil.blogspot.com/2017/10/wymary-krupinski.html" target="_blank">Wymarły Krupiński</a></strong></p>'
         },
         {
           image: "images/mutwil-5_piekary.jpg",
           title: "KWK Piekary, Piekary Śląskie",
           description:
-            '<p>Photo by Maciej Mutwil <strong><a href="http://maciejmutwil.blogspot.com/2017/12/trzy-wieze-plus.html">Trzy wieże plus</a></strong>'
+            '<p>Photo by Maciej Mutwil <strong><a href="http://maciejmutwil.blogspot.com/2017/12/trzy-wieze-plus.html" target="_blank">Trzy wieże plus</a></strong></p>'
         },
         {
           image: "images/mutwil-6_ruda.jpg",
           title: "KWK Śląsk, Ruda Śląska",
           description:
-            '<p>Photo by Maciej Mutwil <strong><a href="http://maciejmutwil.blogspot.com/2018/08/asymetria.html">Asymetria</a></strong>'
+            '<p>Photo by Maciej Mutwil <strong><a href="http://maciejmutwil.blogspot.com/2018/08/asymetria.html" target="_blank">Asymetria</a></strong></p>'
         }
       ];
     </script>

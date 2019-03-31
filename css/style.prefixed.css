@@ -12,16 +12,39 @@
   margin: 0 auto;
 }
 
-.container h1 {
+.container h1,
+.container p {
   display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: "Open sans", sans-serif;
+}
+
+.container h1 {
   float: right;
   min-width: 300px;
   width: 50vw;
   margin-top: 25vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  font-family: "Open sans", sans-serif;
   padding: 20px;
+}
+
+.container p {
+  float: left;
+  margin-top: 10px;
+  padding: 5px 10px 5px 30px;
+  font-size: 10px;
+}
+
+.container p a:link,
+.container p a:visited {
+  text-decoration: none;
+  color: #dedede;
+}
+
+.container p a:hover,
+.container p a:active {
+  text-decoration: underline;
+  color: #f0f0f0;
 }
 
 .carousel-cell {
@@ -32,8 +55,8 @@
 
 .reset-button {
   position: absolute;
-  top: 5vh;
-  right: 5vw;
+  top: 10px;
+  right: 10px;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;

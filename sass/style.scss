@@ -13,16 +13,36 @@ $global-font: "Open sans", sans-serif;
   overflow: hidden;
   margin: 0 auto;
 
-  h1 {
+  h1,
+  p {
     display: block;
+
+    background-color: $semi-transparent-dark;
+    color: white;
+    font-family: $global-font;
+  }
+  h1 {
     float: right;
     min-width: 300px;
     width: 50vw;
     margin-top: 25vh;
-    background-color: $semi-transparent-dark;
-    color: white;
-    font-family: $global-font;
     padding: 20px;
+  }
+  p {
+    float: left;
+    margin-top: 10px;
+    padding: 5px 10px 5px 30px;
+    font-size: 10px;
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: #dedede;
+    }
+    a:hover,
+    a:active {
+      text-decoration: underline;
+      color: #f0f0f0;
+    }
   }
 }
 
@@ -34,8 +54,8 @@ $global-font: "Open sans", sans-serif;
 
 .reset-button {
   position: absolute;
-  top: 5vh;
-  right: 5vw;
+  top: 10px;
+  right: 10px;
   z-index: 1;
   background-color: $semi-transparent-dark;
   color: white;
