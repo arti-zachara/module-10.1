@@ -16,7 +16,7 @@ $global-font: "Open sans", sans-serif;
     min-width: 300px;
     width: 50vw;
     margin-top: 25vh;
-    background-color: semi-transparent-dark;
+    background-color: $semi-transparent-dark;
     color: white;
     font-family: $global-font;
     padding: 20px;
