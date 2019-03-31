@@ -27,31 +27,31 @@
             Reset
         </button>
         <div class="carousel">
-            <div class="carousel-cell" id="carousel-cell1">
+            <div class="carousel-cell">
                 <div class="container" style="background-image:url('images/Knurow MACIEJ MUTWIL 3.jpg');">
                     <h1>KWK Szczygłowice, Knurów</h1>
                 </div>
             </div>
-            <div class="carousel-cell" id="carousel-cell2">
+            <div class="carousel-cell">
                 <div class="container" style="background-image:url('images/Suszec_Maciej_Mutwil.jpg')">
                     <h1>KWK Krupiński, Suszec</h1>
                 </div>
             </div>
-            <div class="carousel-cell" id="carousel-cell3">
+            <div class="carousel-cell">
                 <div class="container" style="background-image:url('images/czulow boze dary MACIEJ MUTWIL 33.jpg')">
                     <h1>KWK Boże Dary, Czułów</h1>
                 </div>
             </div>
-            <div class="carousel-cell" id="carousel-cell4">
+            <div class="carousel-cell">
                 <div class="container" style="background-image:url('images/Halda Krupinski MACIEJ MUTWIL 33.jpg')">
                     <h1>Hałda KWK Krupiński, Suszec</h1>
                 </div>         
             </div>
-            <div class="carousel-cell" id="carousel-cell5">
+            <div class="carousel-cell">
                 <div class="container" style="background-image:url('images/Piekary MACIEJ MUTWIL 1.jpg')">
                     <h1>KWK Piekary, Piekary Śląskie</h1>
                 </div>
-            <div class="carousel-cell" id="carousel-cell6">
+            <div class="carousel-cell">
                 <div class="container" style="background-image:url('images/Slask Ruda slaska MACIEJ MUTWIL (2).jpg')">
                     <h1>KWK Śląsk, Ruda Śląska</h1>
                 </div>
@@ -62,9 +62,43 @@
     <section>
         <div class="progress-bar"></div>
     </section>
-    
+    <script>
+        var carouselCells = [
+            {
+                image: 'images/mutwil-1_knurow.jpg',
+                title: 'KWK Szczygłowice, Knurów',
+                description: '<p>Photo by Maciej Mutwil <strong><a href="http://maciejmutwil.blogspot.com/2018/10/rozadunek-kamienia.html">Rozładunek kamienia</a></strong>'
+            },
+            {
+                image: 'images/mutwil-2_suszec.jpg',
+                title: 'KWK Krupiński, Suszec',
+                description: '<p>Photo by Maciej Mutwil <strong><a href="http://maciejmutwil.blogspot.com/2018/09/powrot-po-przerwie.html">Powrót po przerwie</a></strong>'
+            },
+            {
+                image: 'images/mutwil-3_czulow.jpg',
+                title: 'KWK Boże Dary, Czułów',
+                description: '<p>Photo by Maciej Mutwil <strong><a href="http://maciejmutwil.blogspot.com/2018/09/czuow-is-dead.html">Czułów is dead</a></strong>'
+            },
+            {
+                image: 'images/mutwil-4_halda.jpg',
+                title: 'Hałda KWK Krupiński, Suszec',
+                description: '<p>Photo by Maciej Mutwil <strong><a href="http://maciejmutwil.blogspot.com/2017/10/wymary-krupinski.html">Wymarły Krupiński</a></strong>'
+            },
+            {
+                image: 'images/mutwil-5_piekary.jpg',
+                title: 'KWK Piekary, Piekary Śląskie',
+                description: '<p>Photo by Maciej Mutwil <strong><a href="http://maciejmutwil.blogspot.com/2017/12/trzy-wieze-plus.html">Trzy wieże plus</a></strong>'
+            },
+            {
+                image: 'images/mutwil-6_ruda.jpg',
+                title: 'KWK Śląsk, Ruda Śląska',
+                description: '<p>Photo by Maciej Mutwil <strong><a href="http://maciejmutwil.blogspot.com/2018/08/asymetria.html">Asymetria</a></strong>'
+            }
+        ]
+    </script>
     <script src="vendor/flickity.pkgd.min.js"></script>
     <script src="vendor/hash.js"></script> 
+    <script src="vendor/mustache.min.js"></script> 
     <script src="js/script.js"></script>
   </body>
 </html>
