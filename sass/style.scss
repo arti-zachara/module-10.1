@@ -1,6 +1,7 @@
 $semi-transparent-dark: rgba(0, 0, 0, 0.5);
 $global-font: "Open sans", sans-serif;
 
+// hero section with carousel
 .hero {
   width: 100%;
 }
@@ -68,4 +69,11 @@ $global-font: "Open sans", sans-serif;
   height: 20px;
   width: 0;
   background-color: $semi-transparent-dark;
+}
+// hero section with carousel
+
+// google maps sesction
+#map {
+  height: 400px;
+  width: 100%;
 }

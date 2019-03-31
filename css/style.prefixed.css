@@ -71,4 +71,9 @@
   width: 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+#map {
+  height: 400px;
+  width: 100%;
+}
 /*# sourceMappingURL=style.prefixed.css.map */
