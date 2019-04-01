@@ -6,7 +6,6 @@ Mustache.parse(templateCarouselCells);
 var generatedCarouselCells = "";
 
 for (var i = 0; i < carouselCells.length; i++) {
-  console.log(carouselCells);
   generatedCarouselCells += Mustache.render(
     templateCarouselCells,
     carouselCells[i]
@@ -51,6 +50,9 @@ window.initMap = function() {
     markers[i] = new google.maps.Marker({
       position: carouselCells[i].coords,
       map: map
+    });
+    markers[i].addListener("click", function() {
+      flkty.select(i);
     });
   }
 };
