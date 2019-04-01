@@ -55,4 +55,9 @@ window.initMap = function() {
       flkty.select(i);
     });
   }
+  // changingslide centers a different marker
+  flkty.on("change", function(index) {
+    map.panTo(carouselCells[index].coords);
+    map.setZoom(10);
+  });
 };
