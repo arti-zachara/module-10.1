@@ -46,7 +46,7 @@ window.initMap = function() {
 
   // adding markers
   var markers = [];
-  for (var i = 0; i < carouselCells.length; i++) {
+  for (let i = 0; i < carouselCells.length; i++) {
     markers[i] = new google.maps.Marker({
       position: carouselCells[i].coords,
       map: map
