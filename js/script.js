@@ -46,18 +46,23 @@ window.initMap = function() {
 
   // adding markers
   var markers = [];
+  var markerSelected = false;
   for (let i = 0; i < carouselCells.length; i++) {
     markers[i] = new google.maps.Marker({
       position: carouselCells[i].coords,
       map: map
     });
     markers[i].addListener("click", function() {
+      markerSelected = true;
       flkty.select(i);
     });
   }
   // changingslide centers a different marker
   flkty.on("change", function(index) {
-    smoothPanAndZoom(map, 12, carouselCells[index].coords);
+    if (!markerSelected) {
+      smoothPanAndZoom(map, 12, carouselCells[index].coords);
+    }
+    markerSelected = false;
   });
 
   var smoothPanAndZoom = function(map, zoom, coords) {
